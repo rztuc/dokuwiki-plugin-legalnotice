@@ -1,4 +1,4 @@
-<?php
+<php
   if(!defined('DOKU_INC')) die();
   if(!defined('DOKU_PLUGIN')) define('DOKU_PLUGIN',DOKU_INC.'lib/plugins/');
   require_once(DOKU_PLUGIN.'action.php');
@@ -6,7 +6,7 @@
   class action_plugin_legalnotice extends DokuWiki_Action_Plugin {
 
   function register(&$controller) {
-      $controller->register_hook('TPL_ACT_RENDER', 'AFTER',  $this, 'legalnoticelogin');
+      $controller->register_hook('TPL_ACT_RENDER', 'AFTER',  $this, 'legalnotice');
     }
 
     function legalnotice(&$event, $param) {
