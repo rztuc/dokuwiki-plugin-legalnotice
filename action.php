@@ -12,7 +12,7 @@
     function legalnotice(&$event, $param) {
 	global $conf,$ACT;
 
-	if($ACT!='login') return;
+	if(($ACT!='login') && ($ACT!='denied')) return;
 	echo p_render('xhtml', p_get_instructions($this->getConf('text')), $info);
     }
 
